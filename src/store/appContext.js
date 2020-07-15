@@ -15,16 +15,12 @@ const injectContext = PassedComponent => {
 					this.setState({
 						store: Object.assign(this.state.store, updatedStore)
 					});
-					//localStorage.setItem("userStore", JSON.stringify(this.state.store.loginUserData));
 				}
 			});
 		}
 
 		componentDidMount() {
 
-			//const previusStore = localStorage.getItem("userStore");
-			//if (previusStore) this.setState({ store: JSON.parse(previusStore) });
-			//if (previusStore) this.setState({ store: { ...this.state.store, loginUserData: JSON.parse(previusStore) } });
 		}
 
 		render() {
